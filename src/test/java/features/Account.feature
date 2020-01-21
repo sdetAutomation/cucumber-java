@@ -1,5 +1,6 @@
 Feature: Application Login
 
+#### *** Not able to use Backgroud and Hooks on the same feature file.  Can only use one or the other. **** ####
 #  # prereq that runs before the test
 #  Background:
 #    Given Validate the browser
