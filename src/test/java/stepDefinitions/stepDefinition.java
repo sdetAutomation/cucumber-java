@@ -25,15 +25,14 @@ public class stepDefinition {
         System.out.println("03-This is home_page_is_populated method executed");
     }
 
-    @And("^Cards are displayed$")
-    public void cards_are_displayed() {
-        System.out.println("04a-This is cards_are_displayed method executed");
+    @Then("^Cards displayed \"([^\"]*)\"$")
+    public void cards_displayed(String arg1) {
+        if(arg1.equals("true")){
+            System.out.println("04a-This is cards_displayed method executed result: " + arg1);
+        } else if (arg1.equals("false")){
+            System.out.println("04b-This is cards_displayed method executed result: " + arg1);
+        } else {
+            System.out.println("04c-This is cards_displayed method executed result: " + arg1);
+        }
     }
-
-    @Then("^Cards are not displayed$")
-    public void cards_are_not_displayed() {
-        System.out.println("04b-This is cards_are_not_displayed method executed");
-    }
-
-
 }
