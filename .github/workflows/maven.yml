@@ -19,3 +19,5 @@ jobs:
         run: ./mvnw test -Dcucumber.options="--tags '@AcctTest'"
       - name: Execute Login Tests
         run: ./mvnw test -Dcucumber.options="--tags '@LoginTest'"
+      - name: Execute Mobile Tests
+        run: ./mvnw test -Dcucumber.options="--tags '@MobileTest'"

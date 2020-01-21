@@ -5,3 +5,4 @@ script:
   - ./mvnw install -DskipTests
   - ./mvnw test -Dcucumber.options="--tags '@AcctTest'"
   - ./mvnw test -Dcucumber.options="--tags '@LoginTest'"
+  - ./mvnw test -Dcucumber.options="--tags '@MobileTest'"
