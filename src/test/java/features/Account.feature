@@ -1,7 +1,7 @@
 Feature: Application Login
 
   #dynamic feature
-  @LoginTest
+  @AcctTest
   Scenario: Home page default login
     Given User is on landing page
     When User login into application with "test_user" and "1234"
@@ -9,7 +9,7 @@ Feature: Application Login
     And Cards displayed "true"
 
   #dynamic feature
-  @LoginTest
+  @AcctTest
   Scenario: Home page default login
     Given User is on landing page
     When User login into application with "bad_user" and "4321"
@@ -17,16 +17,16 @@ Feature: Application Login
     And Cards displayed "false"
 
   # datatable
-  @LoginTest
+  @AcctTest
   Scenario: Home page default login
     Given User is on landing page
     When User sign up with following details
-    | test_user | abcd | test_user@gmail.co | usa | 54321|
+      | test_user | abcd | test_user@gmail.co | usa | 54321|
     Then Home page is populated
     And Cards displayed "false"
 
   # parameterization
-  @LoginTest
+  @AcctTest
   Scenario Outline: Home page default login
     Given User is on landing page
     When User login into application with <username> and <password>

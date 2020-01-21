@@ -3,4 +3,5 @@ sudo: false
 script:
   - ./mvnw clean
   - ./mvnw install -DskipTests
-  - ./mvnw test
+  - ./mvnw test -Dcucumber.options="--tags '@AcctTest'"
+  - ./mvnw test -Dcucumber.options="--tags '@LoginTest'"
