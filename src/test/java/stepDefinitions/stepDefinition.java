@@ -1,6 +1,10 @@
 package stepDefinitions;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.*;
+
+import javax.xml.crypto.Data;
+import java.util.List;
 
 public class stepDefinition {
 
@@ -18,6 +22,18 @@ public class stepDefinition {
         } else {
             System.out.println("02c-no_user_info_was_passed_in");
         }
+    }
+
+    @When("^User sign up with following details$")
+    public void user_sign_up_with_following_details(DataTable data) {
+        // convert from datatable to list
+        List<List<String>> obj = data.raw();
+        // first get() is row number, 2nd get() is column number
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(0));
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(1));
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(2));
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(3));
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(4));
     }
 
     @Then("^Home page is populated$")
