@@ -14,4 +14,14 @@ public class Hooks {
     public void afterValidation(){
         System.out.println("Hooks-afterValidation");
     }
+
+    @Before("@WebTest")
+    public void beforeWebValidation(){
+        System.out.println("Hooks-beforeWebValidation");
+    }
+
+    @After("@WebTest")
+    public void afterWebValidation(){
+        System.out.println("Hooks-afterWebValidation");
+    }
 }
