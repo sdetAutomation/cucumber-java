@@ -1,3 +1,4 @@
+@LoginTest
 Feature: Application Login
 
   # prereq that runs before each test
@@ -7,7 +8,6 @@ Feature: Application Login
     Then Check if browser is started
 
   #dynamic feature
-  @LoginTest
   Scenario: Home page default login
     Given User is on landing page
     When User login into application with "test_user" and "1234"
@@ -15,7 +15,6 @@ Feature: Application Login
     And Cards displayed "true"
 
   #dynamic feature
-  @LoginTest
   Scenario: Home page default login
     Given User is on landing page
     When User login into application with "bad_user" and "4321"
@@ -23,7 +22,6 @@ Feature: Application Login
     And Cards displayed "false"
 
   # datatable
-  @LoginTest
   Scenario: Home page default login
     Given User is on landing page
     When User sign up with following details
@@ -32,7 +30,6 @@ Feature: Application Login
     And Cards displayed "false"
 
   # parameterization
-  @LoginTest
   Scenario Outline: Home page default login
     Given User is on landing page
     When User login into application with <username> and <password>
