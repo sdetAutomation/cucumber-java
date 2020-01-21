@@ -18,3 +18,17 @@ Feature: Application Login
     | test_user | abcd | test_user@gmail.co | usa | 54321|
     Then Home page is populated
     And Cards displayed "false"
+
+  # parameterization
+  Scenario Outline: Home page default login
+    Given User is on landing page
+    When User login into application with <username> and <password>
+    Then Home page is populated
+    And Cards displayed "false"
+
+    Examples:
+      |username  |password|
+      |user1     |pass1   |
+      |user2     |pass2   |
+      |user3     |pass3   |
+      |user4     |pass4   |

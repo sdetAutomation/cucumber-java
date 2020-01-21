@@ -36,6 +36,11 @@ public class stepDefinition {
         System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(4));
     }
 
+    @When("^User login into application with user(.+) and pass(.+)$")
+    public void user_login_into_application_with_user_and_pass(int arg1, int arg2) {
+        System.out.println("02-user_login_into_application_with_user_and_pass user: " + arg1 + "| password: " + arg2);
+    }
+
     @Then("^Home page is populated$")
     public void home_page_is_populated() {
         System.out.println("03-This is home_page_is_populated method executed");
