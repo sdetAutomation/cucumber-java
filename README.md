@@ -25,6 +25,12 @@ This project is written in Java and tests can be executed using Maven commands.
 
     ./mvnw clean install  
 
+
+Code Gen Step Definitions
+-----
+Used [Tidy Gherkin - (Chrome extension)](https://chrome.google.com/webstore/detail/tidy-gherkin/nobemmencanophcnicjhfhnjiimegjeo?hl=en-GB) to code gen Step Definitions.  Just 
+cut and paste feature file content to Tidy Gherkin and it will auto gen the Java code for Step Definitions   
+
    
 Continuous Integration(CI)
 ------------
