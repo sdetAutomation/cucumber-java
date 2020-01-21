@@ -1,5 +1,11 @@
 Feature: Application Login
 
+  # prereq that runs before each test
+  Background:
+    Given Validate the browser
+    When Browser is triggered
+    Then Check if browser is started
+
   #dynamic feature
   @LoginTest
   Scenario: Home page default login
