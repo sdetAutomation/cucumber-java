@@ -1,6 +1,8 @@
 package stepDefinitions;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.*;
+import java.util.List;
 
 public class stepDefinition {
 
@@ -18,6 +20,23 @@ public class stepDefinition {
         } else {
             System.out.println("02c-no_user_info_was_passed_in");
         }
+    }
+
+    @When("^User sign up with following details$")
+    public void user_sign_up_with_following_details(DataTable data) {
+        // convert from datatable to list
+        List<List<String>> obj = data.raw();
+        // first get() is row number, 2nd get() is column number
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(0));
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(1));
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(2));
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(3));
+        System.out.println("02-user_sign_up_with_following_details arg: " + obj.get(0).get(4));
+    }
+
+    @When("^User login into application with user(.+) and pass(.+)$")
+    public void user_login_into_application_with_user_and_pass(int arg1, int arg2) {
+        System.out.println("02-user_login_into_application_with_user_and_pass user: " + arg1 + "| password: " + arg2);
     }
 
     @Then("^Home page is populated$")
