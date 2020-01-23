@@ -14,6 +14,7 @@ public class stepDefinition {
     @When("^User login into application with \"([^\"]*)\" and \"([^\"]*)\"$")
     public void user_login_into_application_with_and(String arg1, String arg2) {
         if(arg1.equals("test_user")){
+//            throw new Exception("FAIL: throw exception");
             System.out.println("02a-good_user_login_into_application_with_and user: " + arg1 + "| password: " + arg2);
         } else if (arg1.equals("bad_user")) {
             System.out.println("02b-bad_user_login_into_application_with_and user: " + arg1 + "| password: " + arg2);
