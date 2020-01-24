@@ -2,7 +2,7 @@ package com.sdet.auto.stepDefinitions;
 
 import cucumber.api.java.en.*;
 
-public class background {
+public class Background {
 
     @Given("^Validate the browser$")
     public void validate_the_browser() throws Throwable {

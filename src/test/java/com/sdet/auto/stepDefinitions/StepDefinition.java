@@ -4,7 +4,7 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.*;
 import java.util.List;
 
-public class stepDefinition {
+public class StepDefinition {
 
     @Given("^User is on landing page$")
     public void user_is_on_landing_page() {
