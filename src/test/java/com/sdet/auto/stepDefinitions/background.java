@@ -1,4 +1,4 @@
-package stepDefinitions;
+package com.sdet.auto.stepDefinitions;
 
 import cucumber.api.java.en.*;
 
