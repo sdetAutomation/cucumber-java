@@ -12,6 +12,8 @@ starter project for cucumber java
 
 [![Build Status](https://travis-ci.org/sdetAutomation/cucumber-java.svg?branch=master)](https://travis-ci.org/sdetAutomation/cucumber-java)
 
+[![Java CI](https://github.com/sdetAutomation/cucumber-java/workflows/Java%20CI/badge.svg)](https://github.com/sdetAutomation/cucumber-java/actions)
+
 Introduction
 ------------
 This project is made for anyone who is looking for a starting point for writing functional tests using Cucumber and Java.
